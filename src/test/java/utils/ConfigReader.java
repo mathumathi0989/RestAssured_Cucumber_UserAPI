@@ -6,21 +6,18 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-	private static Properties properties;
+	private static Properties properties = new Properties();
 
     static {
         try {
             FileInputStream file = new FileInputStream("src/test/resources/config.properties");
-            properties = new Properties();
             properties.load(file);
         } catch (IOException e) {
-            throw new RuntimeException("Failed to load config.properties file");
+            e.printStackTrace();
         }
     }
 
     public static String getProperty(String key) {
         return properties.getProperty(key);
     }
-	
-	
 }

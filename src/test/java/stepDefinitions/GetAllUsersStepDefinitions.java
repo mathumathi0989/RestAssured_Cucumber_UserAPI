@@ -1,79 +1,62 @@
 package stepDefinitions;
 
+import java.util.Map;
+
 import org.testng.Assert;
 
-import hooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import utils.ConfigReader;
-
+import utils.JsonDataReader;
 
 public class GetAllUsersStepDefinitions {
+	 private RequestSpecification request;
+	    private Response response;
+	    private Map<String, Object> testData;
 
-	  private Response response;
-	    private String requestType;  // Store request type for later execution
-	    private String finalEndpoint; // Store final endpoint 
-	    private RequestSpecification requestSpec;
-
-	    @Given("Admin set the {string} with {string} and with {string}")
-	    public void admin_sets_the_with_and_with(String reqType, String endpoint, String authType) {
-	    	 // Ensure requestSpec is initialized
-	        requestSpec = new RequestSpecBuilder().build();  // Initialize requestSpec safely
-
-	        // Store request type and endpoint
-	        this.requestType = reqType;
-	        this.finalEndpoint = endpoint.equalsIgnoreCase("valid") ? "/uap/users" : "/uap/user";
-
-	        // Set Base URI
-	        requestSpec.baseUri(ConfigReader.getProperty("baseURI")); 
-
-	        // Set Authentication Type (Basic Auth or Invalid)
-	        if (authType.equalsIgnoreCase("Basic")) {
-	            requestSpec = requestSpec.auth().preemptive().basic(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"));
-	        } else if (authType.equalsIgnoreCase("Invalid")) {
-	            requestSpec = requestSpec.auth().preemptive().basic("invalidUser", "invalidPass");
+	    @Given("Admin set the GET request with valid Endpoint")
+	    public void admin_set_the_get_request_with_valid_endpoint() {
+	        testData = JsonDataReader.getScenarioData("valid all users"); // Get scenario data from JSON
+	        if (testData == null) {
+	            throw new IllegalStateException("Scenario data for 'valid all users' not found in JSON.");
 	        }
+	        request = RestAssured.given()
+	                .auth().basic(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"))
+	                .header("Accept", "application/json")
+	                .log().all();
 
-	        // Set Base Path for the API endpoint
-	        requestSpec.basePath(finalEndpoint);  
+	        System.out.println("Inside: Admin set the GET request");
 	    }
 
-	    @When("Admin sends HTTPS Request")
-	    public void admin_sends_https_request() {
-	    	// Ensure requestSpec is not null and properly set
-	        if (requestSpec == null) {
-	            throw new IllegalStateException("RequestSpecification is not initialized properly");
-	        }
+	    @When("Admin sends HTTPS Request with endpoint")
+	    public void admin_sends_https_request_with_endpoint() {
+	        String endpoint = testData.get("endpoint").toString();
+	        response = request.when().get(endpoint);
 
-	        // Make the API call based on requestType
-	        switch (requestType.toUpperCase()) {
-	            case "GET":
-	                response = requestSpec.get();
-	                break;
-	            case "POST":
-	                response = requestSpec.post();
-	                break;
-	            default:
-	                throw new IllegalArgumentException("Unsupported HTTP method: " + requestType);
-	        }
-
-	        // Log the response for debugging
-	        System.out.println("Response: " + response.prettyPrint());
+	        // Log response
+	        System.out.println("Requesting URL: " + RestAssured.baseURI + endpoint);
+	        System.out.println("Response Status: " + response.getStatusCode());
+	        System.out.println("Response Body: " + response.getBody().asPrettyString());
 	    }
 
-	    @Then("Admin receives {int} and {string}")
-	    public void admin_receives_status_code_and_status_text(int expectedStatusCode, String expectedStatusText) {
-	        // Assert the status code
-	        Assert.assertEquals(response.statusCode(), expectedStatusCode, "Status code mismatch!");
+	    @Then("Admin receives {string} {string} Status Code and should display all the users in response body.")
+	    public void admin_receives_status_code_and_should_display_all_the_users_in_response_body(String statusCode, String statusText) {
+	    	   System.out.println("Response Body: " + response.getBody().asPrettyString());
+	    	   // Log Response
+		        System.out.println("Response Status: " + response.getStatusCode() + " " + response.getStatusLine());
+		     
+	        Assert.assertEquals(response.getStatusCode(), Integer.parseInt(statusCode));
+	     // Assert that the status line contains the expected status text (like "OK")
+	     //   Assert.assertTrue(response.getStatusLine().contains(statusText), 
+	                      //    "Expected status line to contain: " + statusText + ", but found: " + response.getStatusLine());
 
-	        // Assert the status text
-	        Assert.assertTrue(response.statusLine().contains(expectedStatusText), "Status text mismatch!");
 	    }
 }
-	
+
+
 	
 

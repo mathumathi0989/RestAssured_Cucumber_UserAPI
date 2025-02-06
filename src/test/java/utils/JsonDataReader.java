@@ -1,83 +1,87 @@
 package utils;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonDataReader {
 
-	 private static final String FILE_PATH = "src/test/resources/Mathumathi_APIBootcamp_JsonData.json";
-	    private JsonNode testData;
+	// private static final String FILE_PATH = ConfigReader.getProperty("JSON_Path");
+	
+	  //  private static JsonNode testData;
 	    
-	    
-	    // Constructor to initialize and load the JSON data
-	    public JsonDataReader() {     
-	        try {
-	            ObjectMapper objectMapper = new ObjectMapper();
-	            testData = objectMapper.readTree(new File(FILE_PATH));
-	        } catch (Exception e) {
-	            throw new RuntimeException("Failed to load JSON file", e);
-	        }
-	    }
+	  private static final String JSON_PATH = "src/test/resources/Mathumathi_APIBootcamp_JsonData.json";
 
-	    /**
-	     * Get the request data for a specific requestType and scenario.
-	     * 
-	     * @param requestType The name of the request (e.g., "GetAllUsers").
-	     * @param scenario The scenario name (e.g., "valid all users").
-	     * @return JsonNode containing the request data or null if not found.
-	     */
-	    public JsonNode getRequestData(String requestType, String endpoint) {
-	    	// Iterate through the "requests" array to find the matching "requestType"
-	        for (JsonNode requestNode : testData) {
-	            JsonNode requests = requestNode.get("requests");
-	            if (requests != null) {
-	                // Iterate through the list of requests for the given "requestType"
-	                for (JsonNode request : requests) {
-	                    if (request.get("name").asText().equals(requestType)) {
-	                        // Iterate through the "data" array to find the scenario with the matching endpoint
-	                        for (JsonNode scenarioData : request.get("data")) {
-	                            if (scenarioData.get("endpoint").asText().equals(endpoint)) {
-	                                return scenarioData; // Return the matched scenario data
-	                            }
-	                        }
-	                    }
-	                }
-	            }
-	        }
-	        return null; // Return null if no matching data is found
-	    }
+	  public static Map<String, Object> getScenarioData(String scenarioName) {
+		    try {
+		        ObjectMapper objectMapper = new ObjectMapper();
+		        // Read the root as an array
+		        JsonNode rootNode = objectMapper.readTree(new File(JSON_PATH));
+		        
+		        // Assuming there's only one element in the root array
+		        JsonNode requests = rootNode.get(0).get("requests");
 
-	    /**
-	     * Get the expected status code for a given scenario and requestType.
-	     * 
-	     * @param requestType The name of the request (e.g., "GetAllUsers").
-	     * @param scenario The scenario name (e.g., "valid all users").
-	     * @return The expected status code or -1 if not found.
-	     */
-	    public int getExpectedStatusCode(String requestType, String scenario) {
-	        JsonNode requestData = getRequestData(requestType, scenario);
-	        if (requestData != null) {
-	            return requestData.get("statusCode").asInt();
-	        }
-	        return -1; // Return -1 if no matching data is found
+		        // Loop through the "requests" array
+		        for (JsonNode request : requests) {
+		            JsonNode dataList = request.get("data");
+		            
+		            // Loop through the "data" array to find the matching scenario
+		            for (JsonNode data : dataList) {
+		                if (data.get("scenario").asText().equals(scenarioName)) {
+		                    Map<String, Object> scenarioData = new HashMap<>();
+		                    Iterator<String> fieldNames = data.fieldNames();
+		                    while (fieldNames.hasNext()) {
+		                        String fieldName = fieldNames.next();
+		                        scenarioData.put(fieldName, data.get(fieldName).asText());
+		                    }
+		                    return scenarioData;
+		                }
+		            }
+		        }
+		    } catch (Exception e) {
+		        e.printStackTrace();
+		    }
+		    return null;
 	    }
-
-	    /**
-	     * Get the expected status text for a given scenario and requestType.
-	     * 
-	     * @param requestType The name of the request (e.g., "GetAllUsers").
-	     * @param scenario The scenario name (e.g., "valid all users").
-	     * @return The expected status text or empty string if not found.
-	     */
-	    public String getExpectedStatusText(String requestType, String scenario) {
-	        JsonNode requestData = getRequestData(requestType, scenario);
-	        if (requestData != null) {
-	            return requestData.get("statusText").asText();
-	        }
-	        return ""; // Return empty string if no matching data is found
-	    }
-
+//	    // Static block to initialize JSON data when the class loads
+//	    static {
+//	        try {
+//	        	 System.out.println("Loading JSON from: " + FILE_PATH);
+//	            ObjectMapper objectMapper = new ObjectMapper();
+//	            testData = objectMapper.readTree(new File(FILE_PATH));
+//	            if (testData == null) {
+//	                throw new RuntimeException("JSON file is empty or not properly formatted.");
+//	            }
+//	        } catch (IOException e) {
+//	            throw new RuntimeException("Failed to load JSON file: " + FILE_PATH, e);
+//	        }
+//	    }
+//
+//	    public static String getFieldValue(String requestType, String scenario, String fieldName) {
+//	        if (testData == null) {
+//	            throw new RuntimeException("JSON data is not loaded.");
+//	        }
+//
+//	        for (JsonNode requestNode : testData) {
+//	            JsonNode requests = requestNode.get("requests");
+//	            if (requests != null) {
+//	                for (JsonNode request : requests) {
+//	                    if (request.get("name").asText().equals(requestType)) {
+//	                        for (JsonNode scenarioData : request.get("data")) {
+//	                            if (scenarioData.get("scenario").asText().equals(scenario)) {
+//	                                JsonNode fieldValue = scenarioData.get(fieldName);
+//	                                return fieldValue != null ? fieldValue.asText() : "Field not found";
+//	                            }
+//	                        }
+//	                    }
+//	                }
+//	            }
+//	        }
+//	        return "Scenario or requestType not found";
+//	    }
 
 }

@@ -1,0 +1,6 @@
+2025-02-06 18:55:03.450 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 18:55:06.058 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 18:56:50.174 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 18:56:52.716 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 18:57:45.063 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 18:57:47.625 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
