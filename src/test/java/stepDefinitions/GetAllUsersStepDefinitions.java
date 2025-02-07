@@ -14,49 +14,61 @@ import utils.ConfigReader;
 import utils.JsonDataReader;
 
 public class GetAllUsersStepDefinitions {
-	 private RequestSpecification request;
-	    private Response response;
-	    private Map<String, Object> testData;
+	private RequestSpecification request;
+	private Response response;
+	private Map<String, Object> testData;
 
-	    @Given("Admin set the GET request with valid Endpoint")
-	    public void admin_set_the_get_request_with_valid_endpoint() {
-	        testData = JsonDataReader.getScenarioData("valid all users"); // Get scenario data from JSON
-	        if (testData == null) {
-	            throw new IllegalStateException("Scenario data for 'valid all users' not found in JSON.");
-	        }
-	        request = RestAssured.given()
-	                .auth().basic(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"))
-	                .header("Accept", "application/json")
-	                .log().all();
+	@Given("Admin set the GET request")
+	public void admin_set_the_get_request() {
+		request = RestAssured.given().auth()
+				.basic(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"))
+				.header("Accept", "application/json");
+	}
 
-	        System.out.println("Inside: Admin set the GET request");
-	    }
+	@When("Admin sends HTTPS Request with endpoint")
+	public void admin_sends_https_request_with_endpoint() {
+		testData = JsonDataReader.getScenarioData("valid all users");
+		if (testData == null) {
+			throw new IllegalStateException("Scenario data for 'valid all users' not found in JSON.");
+		}
+		String endpoint = testData.get("endpoint").toString();
+		response = request.when().get(endpoint);
 
-	    @When("Admin sends HTTPS Request with endpoint")
-	    public void admin_sends_https_request_with_endpoint() {
-	        String endpoint = testData.get("endpoint").toString();
-	        response = request.when().get(endpoint);
+	}
 
-	        // Log response
-	        System.out.println("Requesting URL: " + RestAssured.baseURI + endpoint);
-	        System.out.println("Response Status: " + response.getStatusCode());
-	        System.out.println("Response Body: " + response.getBody().asPrettyString());
-	    }
+	@Then("Admin receives {string} {string} Status Code")
+	public void admin_receives_status_code(String statusCode, String statusText) {
+		System.out.println("Response Body: " + response.getBody().asPrettyString());
+		Assert.assertEquals(response.getStatusCode(), Integer.parseInt(statusCode));
 
-	    @Then("Admin receives {string} {string} Status Code and should display all the users in response body.")
-	    public void admin_receives_status_code_and_should_display_all_the_users_in_response_body(String statusCode, String statusText) {
-	    	   System.out.println("Response Body: " + response.getBody().asPrettyString());
-	    	   // Log Response
-		        System.out.println("Response Status: " + response.getStatusCode() + " " + response.getStatusLine());
-		     
-	        Assert.assertEquals(response.getStatusCode(), Integer.parseInt(statusCode));
-	     // Assert that the status line contains the expected status text (like "OK")
-	     //   Assert.assertTrue(response.getStatusLine().contains(statusText), 
-	                      //    "Expected status line to contain: " + statusText + ", but found: " + response.getStatusLine());
+	}
 
-	    }
+	@When("Admin sends HTTPS Request without endpoint")
+	public void admin_sends_https_request_without_endpoint() {
+		String endpoint = "";
+		response = request.when().get(endpoint);
+
+	}
+
+	@When("Admin sends HTTPS Request with invalid endpoint")
+	public void admin_sends_https_request_with_invalid_endpoint() {
+		testData = JsonDataReader.getScenarioData("invalid endpoint"); // Get scenario data from JSON
+		if (testData == null) {
+			throw new IllegalStateException("Scenario data for 'valid all users' not found in JSON.");
+		}
+		String endpoint = testData.get("endpoint").toString();
+		response = request.when().get(endpoint);
+
+	}
+
+	@Given("Admin set the GET request without Auth")
+	public void admin_set_the_get_request_without_auth() {
+		request = RestAssured.given().auth().basic("", "").header("Accept", "application/json");
+	}
+
+	@Given("Admin set the GET request with Invalid Basic Auth")
+	public void admin_set_the_get_request_with_invalid_basic_auth() {
+		request = RestAssured.given().auth().basic("numpy@gmail.com", "sdet").header("Accept", "application/json");
+	}
+
 }
-
-
-	
-

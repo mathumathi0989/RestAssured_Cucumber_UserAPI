@@ -4,3 +4,85 @@
 2025-02-06 18:56:52.716 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
 2025-02-06 18:57:45.063 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
 2025-02-06 18:57:47.625 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:01:51.177 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:01:53.779 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:01:53.830 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:01:53.833 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:04:17.880 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:04:20.403 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:04:20.455 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:04:20.666 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:06:20.898 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:06:21.029 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:14:54.712 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:14:55.528 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:15:50.932 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:15:53.771 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:15:53.799 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:15:53.980 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:15:53.987 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:15:54.215 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:17:50.315 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:17:50.318 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:19:52.276 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:19:52.981 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:21:00.050 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:21:00.053 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:21:38.963 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:21:39.697 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:22:15.771 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:22:18.695 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:22:18.730 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:22:18.916 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:22:18.921 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:22:19.153 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:22:19.164 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:22:19.341 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:22:19.349 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:22:19.527 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:36:56.000 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:36:56.003 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:56:13.886 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:56:14.836 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 19:59:33.705 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 19:59:34.704 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 20:01:59.794 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 20:02:00.790 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 20:03:34.503 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 20:03:35.499 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 20:42:00.272 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 20:42:01.251 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 21:07:07.324 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 21:07:08.309 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 21:10:42.671 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 21:10:43.688 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 21:19:38.044 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 21:19:39.118 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 21:22:01.847 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 21:22:02.921 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 21:23:28.991 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 21:23:30.058 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 21:29:18.365 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 21:29:18.368 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 21:37:07.651 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 21:37:07.772 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:06:15.825 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:06:15.949 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:06:37.489 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:06:38.654 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:06:56.934 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:06:57.062 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:16:20.718 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:16:23.320 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:16:23.356 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:16:23.540 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:16:23.548 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:16:23.787 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:16:23.800 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:16:23.974 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:16:23.980 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:16:24.145 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:16:24.152 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:16:24.751 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.
+2025-02-06 22:16:24.756 INFO [main] [hooks.hooks.setup(hooks.java:22)] - Base URI set to: https://userserviceapp-f5a54828541b.herokuapp.com
+2025-02-06 22:16:24.932 INFO [main] [hooks.hooks.tearDown(hooks.java:35)] - Test execution completed.

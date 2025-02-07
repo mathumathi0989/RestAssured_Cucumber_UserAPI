@@ -9,8 +9,10 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"stepDefinitions", "hooks"},  // Ensure hooks are included
         plugin = {"pretty", "json:target/cucumber.json", "html:target/cucumber-reports.html"},
         monochrome = true
+//       tags = "@doing"
 )
 public class testRunner extends AbstractTestNGCucumberTests {
 
+	
 	
 }
