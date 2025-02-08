@@ -16,8 +16,8 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import utils.ConfigReader;
 
-public class hooks {
-	   private static final Logger logger = LogManager.getLogger(hooks.class);
+public class Hooks {
+	   private static final Logger logger = LogManager.getLogger(Hooks.class);
 	   
 	    private static PrintStream logStream;
 	    @Before
