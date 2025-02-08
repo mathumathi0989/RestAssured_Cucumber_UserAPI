@@ -134,7 +134,7 @@
                     "zipCode": "54321"
                 },
                 {
-                    "scenario": "without endpoint",
+                    "scenario": "create user without endpoint",
                     "endpoint": "",
                     "statusCode": 404,
                     "statusText": "Not Found",
@@ -151,7 +151,7 @@
                     "zipCode": "54321"
                 },
                 {
-                    "scenario": "invalid endpoint",
+                    "scenario": "create user invalid endpoint",
                     "endpoint": "/uap/create",
                     "statusCode": 404,
                     "statusText": "Not Found",
@@ -168,7 +168,7 @@
                     "zipCode": "54321"
                 },
                 {
-                    "scenario": "invalid content type",
+                    "scenario": "create user invalid content type",
                     "endpoint": "/uap/createusers",
                     "statusCode": 415,
                     "statusText": "Unsupported Media Type",
@@ -186,7 +186,7 @@
                     "contentType": "application/xml"
                 },
                 {
-                    "scenario": "invalid request type",
+                    "scenario": "create user invalid request type",
                     "endpoint": "/uap/createusers",
                     "statusCode": 405,
                     "statusText": "Method Not Allowed",

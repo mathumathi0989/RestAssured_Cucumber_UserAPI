@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 import com.github.javafaker.Faker;
 
 public class RandomGenerator {
@@ -13,8 +15,8 @@ public class RandomGenerator {
 	         return firstDigit + remainingDigits;
 	    }
 	    public String generateRandomEmail() {
-	        // Generate a random email address
-	        return faker.internet().emailAddress();
+	        int randomNum = ThreadLocalRandom.current().nextInt(1, 100); // Generates a number between 1 and 99
+	        return String.format("team04Mathu%02d@gmail.com", randomNum); // Ensures two-digit format
 	    }
 	    
 	

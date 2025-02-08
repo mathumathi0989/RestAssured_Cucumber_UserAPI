@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "userAddress": {
+        "type": "object",
+        "properties": {
+          "addressId": { "type": "integer" },
+          "plotNumber": { "type": "string" },
+          "street": { "type": "string" },
+          "state": { "type": "string" },
+          "country": { "type": "string" },
+          "zipCode": { "type": "integer" }
+        },
+        "required": ["addressId", "plotNumber", "street", "state", "country", "zipCode"]
+      },
+      "user_id": { "type": "integer" },
+      "user_first_name": { "type": "string" },
+      "user_last_name": { "type": "string" },
+      "user_contact_number": { "type": "integer" },
+      "user_email_id": { "type": "string", "format": "email" },
+      "creation_time": { "type": "string" },
+      "last_mod_time": { "type": "string" }
+    },
+    "required": ["user_id", "user_first_name", "user_last_name", "user_contact_number", "user_email_id", "creation_time", "last_mod_time", "userAddress"]
+  }
+  
