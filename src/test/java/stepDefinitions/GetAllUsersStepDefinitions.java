@@ -63,7 +63,7 @@ public class GetAllUsersStepDefinitions {
 
 	@Given("Admin set the GET request without Auth")
 	public void admin_set_the_get_request_without_auth() {
-		request = RestAssured.given().auth().basic("", "").header("Accept", "application/json");
+		request = RestAssured.given().auth().none().header("Accept", "application/json");
 	}
 
 	@Given("Admin set the GET request with Invalid Basic Auth")

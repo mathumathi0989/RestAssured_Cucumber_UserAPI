@@ -19,7 +19,7 @@ public class getUserByUserIDStepDefinitions {
 	private RequestSpecification request;
 	private Response response;
 	private Map<String, Object> testData;
-	createUserStepDefinition createUser = new createUserStepDefinition();
+	
 
 	@Given("Admin set the GET request by user id")
 	public void admin_set_the_get_request_by_user_id() {
@@ -46,5 +46,44 @@ public class getUserByUserIDStepDefinitions {
 		System.out.println("Response Body: " + response.getBody().asPrettyString());
 		Assert.assertEquals(response.getStatusCode(), Integer.parseInt(statusCode));
 	}
+	
+	
+	@When("Admin sends HTTPS Request with invalid userID")
+	public void admin_sends_https_request_with_invalid_user_id() {
+		testData = JsonDataReader.getScenarioData("invalid userid");
+		String endpoint = testData.get("endpoint").toString();
+		response = request.when().get(endpoint);
+		System.out.println("GET Response Body: " + response.getBody().asPrettyString());
+		
+	}
+
+	
+	@When("Admin sends HTTPS Request with invalid requestType")
+	public void admin_sends_https_request_with_invalid_request_type() {
+		testData = JsonDataReader.getScenarioData("invalid request type");
+		String userId = TestDataStore.getUserId();
+		System.out.println("Retrieved User ID: " + userId);
+		String endpoint = testData.get("endpoint").toString().replace("{{user_id}}", userId);
+		response = request.when().post(endpoint);
+		System.out.println("GET Response Body: " + response.getBody().asPrettyString());
+		
+	}
+	
+	
+	@Given("Admin set the GET request by user id with No Auth")
+	public void admin_set_the_get_request_by_user_id_with_no_auth() {
+		request = RestAssured.given().auth().none()
+				.header("Accept", "application/json");
+	}
+	
+	
+	@Given("Admin set the GET request by user id with invalid basic auth")
+	public void admin_set_the_get_request_by_user_id_with_invalid_basic_auth() {
+		request = RestAssured.given().auth()
+				.basic("numpy@gmail.com","invalid")
+				.header("Accept", "application/json");
+		
+	}
+	
 
 }

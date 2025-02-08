@@ -8,7 +8,9 @@ public class RandomGenerator {
 
 	    public String generateRandomContactNumber() {
 	        // Generate a random phone number
-	    	 return faker.number().digits(10);
+	    	 int firstDigit = faker.number().numberBetween(1, 9);
+	         String remainingDigits = faker.number().digits(9);
+	         return firstDigit + remainingDigits;
 	    }
 	    public String generateRandomEmail() {
 	        // Generate a random email address

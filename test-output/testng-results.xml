@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-06T22:16:20 EST" name="Default suite" finished-at="2025-02-06T22:16:24 EST" duration-ms="4846">
+  <suite started-at="2025-02-07T19:03:49 EST" name="Default suite" finished-at="2025-02-07T19:03:57 EST" duration-ms="7620">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-06T22:16:20 EST" name="Default test" finished-at="2025-02-06T22:16:24 EST" duration-ms="4846">
+    <test started-at="2025-02-07T19:03:49 EST" name="Default test" finished-at="2025-02-07T19:03:57 EST" duration-ms="7620">
       <class name="testRunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:20 EST" name="setUpClass" finished-at="2025-02-06T22:16:20 EST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:49 EST" name="setUpClass" finished-at="2025-02-07T19:03:50 EST" duration-ms="344" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@113a89c5]]>
+                <![CDATA[org.testng.TestRunner@1d38ca2b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T22:16:23 EST" duration-ms="2958" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:50 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:53 EST" duration-ms="2818" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:23 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T22:16:23 EST" duration-ms="190" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:53 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:53 EST" duration-ms="201" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:23 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T22:16:23 EST" duration-ms="245" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:53 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:53 EST" duration-ms="237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:23 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T22:16:23 EST" duration-ms="183" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:53 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:53 EST" duration-ms="103" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:23 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T22:16:24 EST" duration-ms="169" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:53 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:53 EST" duration-ms="180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:24 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T22:16:24 EST" duration-ms="604" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:53 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:54 EST" duration-ms="559" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:24 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T22:16:24 EST" duration-ms="180" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:54 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:54 EST" duration-ms="206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,263 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@32a68f4f]" started-at="2025-02-06T22:16:24 EST" name="tearDownClass" finished-at="2025-02-06T22:16:24 EST" duration-ms="34" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:54 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:54 EST" duration-ms="201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by invalid USER ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:54 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:55 EST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by user id with invalid request type"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:55 EST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by USER ID with invaid Basic Auth"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:55 EST" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by USER ID with No Auth"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:55 EST" duration-ms="283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to update a user with all valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update User API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:55 EST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by valid USER FirstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserFirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:56 EST" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by invalid USER FirstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserFirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:56 EST" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by user FirstName with invalid request type"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserFirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:56 EST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by USER FirstName with invaid Basic Auth"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserFirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:56 EST" duration-ms="80" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to GET user by USER FirstName with No Auth"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get User By UserFirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:56 EST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to DELETE user by valid USER ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:56 EST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to DELETE user by already deleted USER ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:57 EST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to DELETE user by invalid USER ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:57 EST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to DELETE user by user id with invalid request type"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:57 EST" duration-ms="172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to DELETE user by USER ID with invaid Basic Auth"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T19:03:57 EST" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to DELETE user by USER ID with No Auth"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete User By UserID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@331acdad]" started-at="2025-02-07T19:03:57 EST" name="tearDownClass" finished-at="2025-02-07T19:03:57 EST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

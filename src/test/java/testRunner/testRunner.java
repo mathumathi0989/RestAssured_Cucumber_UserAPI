@@ -6,10 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"stepDefinitions", "hooks"},  // Ensure hooks are included
-        plugin = {"pretty", "json:target/cucumber.json", "html:target/cucumber-reports.html"},
-        monochrome = true
-//       tags = "@doing"
+        glue = {"stepDefinitions", "hooks"},  
+        plugin = {"pretty", "json:target/cucumber.json", "html:target/cucumber-reports.html", "com.aventstack.chaintest.plugins.ChainTestCucumberListener:"},
+        monochrome = true //,    tags = "@doing"
 )
 public class testRunner extends AbstractTestNGCucumberTests {
 
