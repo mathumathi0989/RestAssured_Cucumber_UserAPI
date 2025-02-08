@@ -48,12 +48,103 @@ Scenario: Check if Admin is able to create a user with invalid basic auth
     When Admin sends HTTPS Request and request Body with no or invalid auth
     Then Admin receives "401" "Unauthorized" Status		 
 
-
-
 Scenario: Check if Admin is able to create a user with first name as numeric 
     Given Admin set the POST request
     When Admin sends HTTPS Request and request Body with first name as numeric 
     Then Admin receives "400" "Bad Request" Status with error message		
 
-		
-		
+Scenario: Check if Admin is able to create a user with Empty first name 
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with first name as empty 
+    Then Admin receives "400" "Bad Request" Status with error message				
+
+Scenario: Check if Admin is able to create a user with last name as numeric
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with last name as numeric 
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with Empty last name 
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with last name as empty 
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with contact number less than ten numbers
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with contact number less than ten numbers
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with contact number as alphanumeric
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with contact number as alphanumeric
+    Then Admin receives "400" "Bad Request" Status with error message		
+
+Scenario: Check if Admin is able to create a user with empty contact number
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with empty contact number
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with contact number greater than ten numbers
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with contact number greater than ten numbers
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with invalid  email format
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with invalid email format
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with empty email
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with empty email
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with invalid plot number
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with invalid plot number
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with empty plot number
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with empty plot number
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with Street as numeric
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with Street as numeric
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with Street as empty
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with Street as empty
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with State as numeric
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with State as numeric
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with State as empty
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with State as empty
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with country as numeric
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with country as numeric
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with country as empty
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with country as empty
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+Scenario: Check if Admin is able to create a user with zipcode as alphanumeric
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with zipcode as alphanumeric
+    Then Admin receives "400" "Bad Request" Status with error message	
+
+#Scenario: Check if Admin is able to create a user with zipcode as empty
+    #Given Admin set the POST request
+    #When Admin sends HTTPS Request and request Body with zipcode as empty
+    #Then Admin receives "400" "Bad Request" Status with error message
+	

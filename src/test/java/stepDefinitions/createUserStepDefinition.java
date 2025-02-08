@@ -358,7 +358,132 @@ public class createUserStepDefinition {
 //		String actualMessage = response.jsonPath().getString("message");
 //		String expectedMessage = "user FirstName is mandatory and should contains alphabets only";
 //		Assert.assertEquals(actualMessage, expectedMessage);
+		// Check if the response contains "user_id"
+		// Fetch user_id from the response
+		/*
+		    String userId = response.jsonPath().getString("user_id");
+		    if (userId == null || userId.isEmpty()) {
+		        throw new RuntimeException("User ID extraction failed. Cannot proceed with deletion.");
+		    }
+		    else {
+		    System.out.println("Extracted User ID: " + userId);
+		    // Construct delete endpoint
+		    String deleteEndpoint = ConfigReader.getProperty("baseURI") + "/uap/deleteuser/" + userId;
+		    System.out.println("Deleting user at: " + deleteEndpoint);
+
+		    // Perform DELETE request
+		    Response deleteResponse = RestAssured.given()
+		            .auth().basic(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"))
+		            .header("Accept", "application/json")
+		            .when()
+		            .delete(deleteEndpoint);
+
+		    // Log delete response details
+		    System.out.println("Delete Response Status: " + deleteResponse.getStatusCode());
+		    System.out.println("Delete Response Body: " + deleteResponse.getBody().asPrettyString());
+
+		    // Validate DELETE response
+		    Assert.assertEquals(deleteResponse.getStatusCode(), 200, "User deletion failed!");
+		    
+		} 
+		*/
 	}
+	
+	@When("Admin sends HTTPS Request and request Body with first name as empty")
+	public void admin_sends_https_request_and_request_body_with_first_name_as_empty() {
+		createRequestBody("invalid firstName as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with State as numeric")
+	public void admin_sends_https_request_and_request_body_with_state_as_numeric() {
+		createRequestBody("invalid state as numeric");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with State as empty")
+	public void admin_sends_https_request_and_request_body_with_state_as_empty() {
+		createRequestBody("invalid state as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with zipcode as empty")
+	public void admin_sends_https_request_and_request_body_with_zipcode_as_empty() {
+		createRequestBody("invalid zipcode as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with invalid email format")
+	public void admin_sends_https_request_and_request_body_with_invalid_email_format() {
+		createRequestBody("invalid email");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with empty contact number")
+	public void admin_sends_https_request_and_request_body_with_empty_contact_number() {
+		createRequestBody("invalid contact number as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with last name as numeric")
+	public void admin_sends_https_request_and_request_body_with_last_name_as_numeric() {
+	    createRequestBody("invalid last name as numeric");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with Street as empty")
+	public void admin_sends_https_request_and_request_body_with_street_as_empty() {
+		createRequestBody("invalid street as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with invalid plot number")
+	public void admin_sends_https_request_and_request_body_with_invalid_plot_number() {
+		createRequestBody("invalid plot number");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with contact number as alphanumeric")
+	public void admin_sends_https_request_and_request_body_with_contact_number_as_alphanumeric() {
+		createRequestBody("invalid contact number as alphanumeric");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with empty plot number")
+	public void admin_sends_https_request_and_request_body_with_empty_plot_number() {
+		createRequestBody("invalid plot number as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with country as empty")
+	public void admin_sends_https_request_and_request_body_with_country_as_empty() {
+		createRequestBody("invalid country as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with contact number less than ten numbers")
+	public void admin_sends_https_request_and_request_body_with_contact_number_less_than_ten_numbers() {
+		createRequestBody("invalid contact number <10");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with last name as empty")
+	public void admin_sends_https_request_and_request_body_with_last_name_as_empty() {
+		createRequestBody("invalid lastName as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with empty email")
+	public void admin_sends_https_request_and_request_body_with_empty_email() {
+		createRequestBody("invalid email as empty");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with country as numeric")
+	public void admin_sends_https_request_and_request_body_with_country_as_numeric() {
+		createRequestBody("invalid country as numeric");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with contact number greater than ten numbers")
+	public void admin_sends_https_request_and_request_body_with_contact_number_greater_than_ten_numbers() {
+		createRequestBody("invalid contact number >10");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with zipcode as alphanumeric")
+	public void admin_sends_https_request_and_request_body_with_zipcode_as_alphanumeric() {
+		createRequestBody("invalid zipcode as alphanumeric");
+	}
+	
+	@When("Admin sends HTTPS Request and request Body with Street as numeric")
+	public void admin_sends_https_request_and_request_body_with_street_as_numeric() {
+		createRequestBody("invalid street as numeric");
+	}
+	
 	
 
 }

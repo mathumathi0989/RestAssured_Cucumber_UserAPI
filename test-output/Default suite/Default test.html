@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>31/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 07 22:34:47 EST 2025</td>
+<td>Started on:</td><td>Sat Feb 08 17:08:14 EST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9789 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1736 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,8 +76,8 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with only mandatory fields", "Create User API"</td>
-<td><div><pre>java.lang.AssertionError: expected [201] but found [500]
+<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with zipcode as empty", "Create User API"</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -85,10 +85,10 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at stepDefinitions.createUserStepDefinition.admin_receives_status_for_create_user(createUserStepDefinition.java:93)
-	at ✽.Admin receives &quot;201&quot; &quot;Created&quot; Status for create user(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:14)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1387930084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1387930084'><pre>java.lang.AssertionError: expected [201] but found [500]
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:357)
+	at ✽.Admin receives &quot;400&quot; &quot;Bad Request&quot; Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:149)
+</pre></div><a href='#' onClick='toggleBox("stack-trace689749616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace689749616'><pre>java.lang.AssertionError: expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -96,174 +96,10 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at stepDefinitions.createUserStepDefinition.admin_receives_status_for_create_user(createUserStepDefinition.java:93)
-	at ✽.Admin receives &quot;201&quot; &quot;Created&quot; Status for create user(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:14)
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:357)
+	at ✽.Admin receives &quot;400&quot; &quot;Bad Request&quot; Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:149)
 </pre></div></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to Get All User List with valid credentials", "GetAllUsers"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by invalid USER FirstName", "Get User By UserFirstName API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to Get  all user with Invalid Basic Auth", "GetAllUsers"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with invalid content Type", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to Get All User List without endpoint", "GetAllUsers"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by USER ID with No Auth", "Get User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with invalid request type", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by user id with invalid request type", "Get User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to DELETE user by valid USER ID", "Delete User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with all valid credentials", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with No Auth", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with invalid basic auth", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to DELETE user by already deleted USER ID", "Delete User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by user FirstName with invalid request type", "Get User By UserFirstName API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to update a user with all valid credentials", "Update User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to DELETE user by USER ID with No Auth", "Delete User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to DELETE user by USER ID with invaid Basic Auth", "Delete User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by USER ID with invaid Basic Auth", "Get User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with invalid endpoint", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with same contact number", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by valid USER FirstName", "Get User By UserFirstName API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by USER FirstName with invaid Basic Auth", "Get User By UserFirstName API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to Get  all user with No Auth", "GetAllUsers"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by invalid USER ID", "Get User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to DELETE user by user id with invalid request type", "Delete User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with first name as numeric", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is unable to Get All User List with invalid endpoint", "GetAllUsers"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to create a user with same email", "Create User API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by USER FirstName with No Auth", "Get User By UserFirstName API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to DELETE user by invalid USER ID", "Delete User By UserID API"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.testRunner@8dbfffb</td></tr>
-<tr>
-<td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if Admin is able to GET user by valid USER ID", "Get User By UserID API"</td>
-<td></td>
-<td>0</td>
+<td>1</td>
 <td>testRunner.testRunner@8dbfffb</td></tr>
 </table><p>
 </body>
