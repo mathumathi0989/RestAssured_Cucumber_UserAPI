@@ -17,37 +17,34 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import utils.ConfigReader;
 
 public class Hooks {
-	   private static final Logger logger = LogManager.getLogger(Hooks.class);
-	   
-	    private static PrintStream logStream;
-	    @Before
-	    public void setup() {
-	        RestAssured.baseURI = ConfigReader.getProperty("baseURI");
-	        logger.info("Base URI set to: " + RestAssured.baseURI);
-	        try {
-	            // Create a file for logging API requests & responses
-	            File logFile = new File("logs/api_logs.txt");
-	            logFile.getParentFile().mkdirs(); // Ensure directory exists
+	private static final Logger logger = LogManager.getLogger(Hooks.class);
 
-	            // Open PrintStream to write logs
-	            logStream = new PrintStream(new FileOutputStream(logFile, true)); // Append mode
+	private static PrintStream logStream;
 
-	            // Attach RestAssured filters for logging requests & responses
-	            RestAssured.filters(new RequestLoggingFilter(logStream), new ResponseLoggingFilter(logStream));
+	@Before
+	public void setup() {
+		RestAssured.baseURI = ConfigReader.getProperty("baseURI");
+		logger.info("Base URI set to: " + RestAssured.baseURI);
+		try {
+			// Create a file for logging API requests & responses
+			File logFile = new File("logs/api_logs.txt");
+			logFile.getParentFile().mkdirs(); // Ensure directory exists
+			// Open PrintStream to write logs
+			logStream = new PrintStream(new FileOutputStream(logFile, true)); // Append mode
+			// Attach RestAssured filters for logging requests & responses
+			RestAssured.filters(new RequestLoggingFilter(logStream), new ResponseLoggingFilter(logStream));
 
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }      
-	    }
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-	    
-	    
-	    @After
-	    public void tearDown() {
-	        logger.info("Test execution completed.");
-	        if (logStream != null) {
-	            logStream.close(); // Close the log file after tests
-	        }
+	@After
+	public void tearDown() {
+		logger.info("Test execution completed.");
+		if (logStream != null) {
+			logStream.close(); // Close the log file after tests
+		}
 
-	    }
+	}
 }

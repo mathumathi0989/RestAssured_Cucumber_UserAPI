@@ -2,6 +2,7 @@
 
  Feature: Create User API
  
+@sanity
 Scenario: Check if Admin is able to create a user with all valid credentials
     Given Admin set the POST request with the valid request body
     When Admin sends HTTPS Request and request Body with endpoint
@@ -10,7 +11,7 @@ Scenario: Check if Admin is able to create a user with all valid credentials
 Scenario: Check if Admin is able to create a user with only mandatory fields
 		Given Admin set the POST request with the valid request body
 		When Admin sends HTTPS Request and request Body with mandatory
-		Then Admin receives "201" "Created" Status for create user
+		Then Admin receives "201" "Created" Status for create user mandatory
 
 Scenario: Check if Admin is able to create a user with invalid endpoint
     Given Admin set the POST request with the valid request body
@@ -142,8 +143,8 @@ Scenario: Check if Admin is able to create a user with zipcode as alphanumeric
     When Admin sends HTTPS Request and request Body with zipcode as alphanumeric
     Then Admin receives "400" "Bad Request" Status with error message	
 
-#Scenario: Check if Admin is able to create a user with zipcode as empty
-    #Given Admin set the POST request
-    #When Admin sends HTTPS Request and request Body with zipcode as empty
-    #Then Admin receives "400" "Bad Request" Status with error message
+Scenario: Check if Admin is able to create a user with zipcode as empty
+    Given Admin set the POST request
+    When Admin sends HTTPS Request and request Body with zipcode as empty
+    Then Admin receives "400" "Bad Request" Status with error message
 	

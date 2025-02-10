@@ -19,9 +19,9 @@
         <span class="ms-3 fs-6">chaintest-testng-example</span>
       </div>
       <div>
-        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 2s</span>
-        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2025-02-08 06:25:30 PM</span>
-        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2025-02-08 06:25:33 PM</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 13s</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2025-02-09 08:05:24 PM</span>
+        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2025-02-09 08:05:37 PM</span>
           <button role="button" id="sys-info" class="btn btn-outline-primary smaller" title="View System Info">
             <i class="bi bi-pc-display-horizontal"></i></button>
         <button role="button" id="shortcuts" class="btn btn-outline-primary smaller" title="Shortcuts">
@@ -46,8 +46,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp1">3</span> Passed,
-                <span id="sf1">0</span> Failed,
+                <span id="sp1">5</span> Passed,
+                <span id="sf1">1</span> Failed,
                 <span id="ss1">0</span> Skipped
               </div>
             </div>
@@ -63,8 +63,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp2">4</span> Passed,
-                <span id="sf2">0</span> Failed,
+                <span id="sp2">51</span> Passed,
+                <span id="sf2">2</span> Failed,
                 <span id="ss2">0</span> Skipped
               </div>
             </div>
@@ -80,8 +80,8 @@
                   </div>
                 </div>
                 <div class="card-footer small">
-                  <span id="sp3">12</span> Passed,
-                  <span id="sf3">0</span> Failed,
+                  <span id="sp3">157</span> Passed,
+                  <span id="sf3">2</span> Failed,
                   <span id="ss3">0</span> Skipped
                 </div>
               </div>
@@ -110,9 +110,9 @@
               </thead>
               <tbody>
                   <tr>
-                    <td><a href="#" class="secondary tag">@doing</a></td>
-                    <td>4</td>
-                    <td>4</td>
+                    <td><a href="#" class="secondary tag">@sanity</a></td>
+                    <td>6</td>
+                    <td>6</td>
                     <td>0</td>
                     <td>1ms</td>
                   </tr>
@@ -142,16 +142,350 @@
         <div class="container">
           <div class="row">
             <div class="col-4">
+              <h6 class="mb-3 testname fs-6 passed">Feature: Get User By UserFirstName API</h6>
+              <div class="small">
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 8ms</span>
+                <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
+                  2025-02-09 08:05:37 PM</span>
+                <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
+                  2025-02-09 08:05:37 PM</span>
+              </div>
+                <div class="my-2">
+                    <span class="badge rounded-pill text-bg-secondary">@sanity</span>
+                </div>
+              
+            </div>
+            <div class="col-8">
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by valid USER FirstName</span>
+                      </div>
+                      <div>
+                          <span class="tag-list">
+                              <span class="badge rounded-pill text-bg-secondary">@sanity</span>
+                          </span>
+                          <span class="mx-1">&middot;</span>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user firstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the GET HTTP request by User FirstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "200" "OK" Status code for UserFirstName</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by invalid USER FirstName</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user firstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with invalid userfirstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "404" "Not Found" Status code for UserFirstName</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by user FirstName with invalid request type</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user firstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with invalid requestType by User firstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "405" "Method Not Allowed" Status code for UserFirstName</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by USER FirstName with invaid Basic Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user firstName with invalid basic auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the GET HTTP request by User FirstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "401" "Unauthorized" Status code for UserFirstName</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by USER FirstName with No Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user firstName with No Auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the GET HTTP request by User FirstName</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "401" "Unauthorized" Status code for UserFirstName</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+            <div class="border-bottom my-5"></div>
+      </div>
+      <div class="test-container passed">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h6 class="mb-3 testname fs-6 passed">Feature: GetAllUsers</h6>
+              <div class="small">
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 6ms</span>
+                <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
+                  2025-02-09 08:05:37 PM</span>
+                <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
+                  2025-02-09 08:05:37 PM</span>
+              </div>
+                <div class="my-2">
+                    <span class="badge rounded-pill text-bg-secondary">@sanity</span>
+                </div>
+              
+            </div>
+            <div class="col-8">
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to Get All User List with valid credentials</span>
+                      </div>
+                      <div>
+                          <span class="tag-list">
+                              <span class="badge rounded-pill text-bg-secondary">@sanity</span>
+                          </span>
+                          <span class="mx-1">&middot;</span>
+                        <span class="badge text-dark bg-light">1ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with endpoint</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "200" "OK" Status Code</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to Get All User List without endpoint</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request without endpoint</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "404" "Not Found" Status Code</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is unable to Get All User List with invalid endpoint</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with invalid endpoint</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "404" "Not Found" Status Code</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to Get  all user with No Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request without Auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with endpoint</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "401" "Unauthorized" Status Code</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to Get  all user with Invalid Basic Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request with Invalid Basic Auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with endpoint</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "401" "Unauthorized" Status Code</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+            <div class="border-bottom my-5"></div>
+      </div>
+      <div class="test-container passed">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
               <h6 class="mb-3 testname fs-6 passed">Feature: Delete User By UserID API</h6>
               <div class="small">
                 <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 9ms</span>
                 <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  2025-02-08 06:25:33 PM</span>
+                  2025-02-09 08:05:37 PM</span>
                 <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  2025-02-08 06:25:33 PM</span>
+                  2025-02-09 08:05:37 PM</span>
               </div>
                 <div class="my-2">
-                    <span class="badge rounded-pill text-bg-secondary">@doing</span>
+                    <span class="badge rounded-pill text-bg-secondary">@sanity</span>
                 </div>
               
             </div>
@@ -165,7 +499,7 @@
                       </div>
                       <div>
                           <span class="tag-list">
-                              <span class="badge rounded-pill text-bg-secondary">@doing</span>
+                              <span class="badge rounded-pill text-bg-secondary">@sanity</span>
                           </span>
                           <span class="mx-1">&middot;</span>
                         <span class="badge text-dark bg-light">0ms</span>
@@ -188,6 +522,146 @@
   </div>
                   </div>
                 </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to DELETE user by already deleted USER ID</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the DELETE request by user id</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends DELETE HTTPS Request with already deleted userID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "404" "Not Found" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to DELETE user by invalid USER ID</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the DELETE request by user id</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends DELETE HTTPS Request with invalid userID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "404" "Not Found" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to DELETE user by user id with invalid request type</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the DELETE request by user id</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with invalid requestType by userID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "405" "Method Not Allowed" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to DELETE user by USER ID with invaid Basic Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the DELETE request by user id with invalid basic auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the DELETE HTTP request by User ID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "401" "Unauthorized" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to DELETE user by USER ID with No Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the DELETE request by user id with No Auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the DELETE HTTP request by User ID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "401" "Unauthorized" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -201,12 +675,12 @@
               <div class="small">
                 <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 9ms</span>
                 <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  2025-02-08 06:25:33 PM</span>
+                  2025-02-09 08:05:37 PM</span>
                 <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  2025-02-08 06:25:33 PM</span>
+                  2025-02-09 08:05:37 PM</span>
               </div>
                 <div class="my-2">
-                    <span class="badge rounded-pill text-bg-secondary">@doing</span>
+                    <span class="badge rounded-pill text-bg-secondary">@sanity</span>
                 </div>
               
             </div>
@@ -216,13 +690,41 @@
                     <div class="d-flex justify-content-between">
                       <div>
                           <i class="bi bi-check-circle-fill text-success"></i>
-                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to update a user with No Auth</span>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to update a user with all valid credentials</span>
                       </div>
                       <div>
                           <span class="tag-list">
-                              <span class="badge rounded-pill text-bg-secondary">@doing</span>
+                              <span class="badge rounded-pill text-bg-secondary">@sanity</span>
                           </span>
                           <span class="mx-1">&middot;</span>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the PUT request with the valid request body and valid Endpoint</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with request Body</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "200" "OK" Status for update user</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to update a user with No Auth</span>
+                      </div>
+                      <div>
                         <span class="badge text-dark bg-light">0ms</span>
                       </div>
                     </div>
@@ -251,10 +753,6 @@
                         <span class="fs-6 ms-2">Scenario: Check if Admin is able to update a user with invalid basic auth</span>
                       </div>
                       <div>
-                          <span class="tag-list">
-                              <span class="badge rounded-pill text-bg-secondary">@doing</span>
-                          </span>
-                          <span class="mx-1">&middot;</span>
                         <span class="badge text-dark bg-light">0ms</span>
                       </div>
                     </div>
@@ -284,16 +782,183 @@
         <div class="container">
           <div class="row">
             <div class="col-4">
-              <h6 class="mb-3 testname fs-6 passed">Feature: Create User API</h6>
+              <h6 class="mb-3 testname fs-6 passed">Feature: Get User By UserID API</h6>
               <div class="small">
                 <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 8ms</span>
                 <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  2025-02-08 06:25:33 PM</span>
+                  2025-02-09 08:05:37 PM</span>
                 <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  2025-02-08 06:25:33 PM</span>
+                  2025-02-09 08:05:37 PM</span>
               </div>
                 <div class="my-2">
-                    <span class="badge rounded-pill text-bg-secondary">@doing</span>
+                    <span class="badge rounded-pill text-bg-secondary">@sanity</span>
+                </div>
+              
+            </div>
+            <div class="col-8">
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by valid USER ID</span>
+                      </div>
+                      <div>
+                          <span class="tag-list">
+                              <span class="badge rounded-pill text-bg-secondary">@sanity</span>
+                          </span>
+                          <span class="mx-1">&middot;</span>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user id</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the GET HTTP request by User ID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "200" "OK" Status code with valid user details</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by invalid USER ID</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user id</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with invalid userID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "404" "Not Found" Status code with valid user details</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by user id with invalid request type</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user id</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request with invalid requestType</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "405" "Method Not Allowed" Status code with valid user details</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by USER ID with invaid Basic Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user id with invalid basic auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the GET HTTP request by User ID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "401" "Unauthorized" Status code with valid user details</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to GET user by USER ID with No Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the GET request by user id with No Auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends the GET HTTP request by User ID</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives the "401" "Unauthorized" Status code with valid user details</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+            <div class="border-bottom my-5"></div>
+      </div>
+      <div class="test-container failed">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h6 class="mb-3 testname fs-6 failed">Feature: Create User API</h6>
+              <div class="small">
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 9ms</span>
+                <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
+                  2025-02-09 08:05:37 PM</span>
+                <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
+                  2025-02-09 08:05:37 PM</span>
+              </div>
+                <div class="my-2">
+                    <span class="badge rounded-pill text-bg-secondary">@sanity</span>
                 </div>
               
             </div>
@@ -307,10 +972,10 @@
                       </div>
                       <div>
                           <span class="tag-list">
-                              <span class="badge rounded-pill text-bg-secondary">@doing</span>
+                              <span class="badge rounded-pill text-bg-secondary">@sanity</span>
                           </span>
                           <span class="mx-1">&middot;</span>
-                        <span class="badge text-dark bg-light">1ms</span>
+                        <span class="badge text-dark bg-light">0ms</span>
                       </div>
                     </div>
                     
@@ -330,6 +995,812 @@
   </div>
                   </div>
                 </div>
+                <div class="card mb-3 result failed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with only mandatory fields</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the valid request body</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with mandatory</span>
+        </div>
+        <div class="mt-1 pb-1">
+              <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+          <span class="ms-2">Then Admin receives "201" "Created" Status for create user mandatory</span>
+            <pre class="py-2 mt-2">java.lang.AssertionError: Status code mismatch expected [201] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at utils.apiHelper.statusCodeValidation(apiHelper.java:192)
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_for_create_user_mandatory(createUserStepDefinition.java:56)
+	at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:14)
+</pre>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with invalid endpoint</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the valid request body</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with invalid endpoint</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "404" "Not Found" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with invalid content Type</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the invalid contentType</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with invalid content type</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "415" "Unsupported Media Type" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with invalid request type</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the valid request body</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with invalid request type</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "405" "Not Allowed" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with same contact number</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the valid request body</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with same contact number</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "409" "Conflict" Status with contact message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with same email</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the valid request body</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with same email</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "409" "Conflict" Status with email message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with No Auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the valid request body with no Auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with no or invalid auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "401" "Unauthorized" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with invalid basic auth</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request with the valid request body with invalid basic Auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with no or invalid auth</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "401" "Unauthorized" Status</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with first name as numeric</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">1ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with first name as numeric</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with Empty first name</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with first name as empty</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with last name as numeric</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with last name as numeric</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with Empty last name</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with last name as empty</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with contact number less than ten numbers</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with contact number less than ten numbers</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with contact number as alphanumeric</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with contact number as alphanumeric</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with empty contact number</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with empty contact number</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with contact number greater than ten numbers</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with contact number greater than ten numbers</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with invalid  email format</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with invalid email format</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with empty email</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with empty email</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with invalid plot number</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with invalid plot number</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with empty plot number</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with empty plot number</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with Street as numeric</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with Street as numeric</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with Street as empty</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with Street as empty</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with State as numeric</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with State as numeric</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with State as empty</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with State as empty</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with country as numeric</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with country as numeric</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with country as empty</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with country as empty</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with zipcode as alphanumeric</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with zipcode as alphanumeric</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+        </div>
+  </div>
+                  </div>
+                </div>
+                <div class="card mb-3 result failed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+                        <span class="fs-6 ms-2">Scenario: Check if Admin is able to create a user with zipcode as empty</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">0ms</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-2">
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">Given Admin set the POST request</span>
+        </div>
+        <div class="mt-1 pb-1">
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">When Admin sends HTTPS Request and request Body with zipcode as empty</span>
+        </div>
+        <div class="mt-1 pb-1">
+              <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+          <span class="ms-2">Then Admin receives "400" "Bad Request" Status with error message</span>
+            <pre class="py-2 mt-2">java.lang.AssertionError: Status code mismatch expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at utils.apiHelper.statusCodeValidation(apiHelper.java:192)
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:264)
+	at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:149)
+</pre>
+        </div>
+  </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -338,22 +1809,22 @@
   </div>
 
   <script>
-    const stats1Annotation = {'total': 3, 'passed': 3};
+    const stats1Annotation = {'total': 6, 'passed': 5};
     const stats1 = [
-      { result: 'Passed', count: 3, bg: 'rgb(140, 197, 83)' },
-      { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+      { result: 'Passed', count: 5, bg: 'rgb(140, 197, 83)' },
+      { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
       { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
     ];
-      const stats2Annotation = {'total': 4, 'passed': 4};
+      const stats2Annotation = {'total': 53, 'passed': 51};
       const stats2 = [
-        { result: 'Passed', count: 4, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 51, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 2, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
-      const stats3Annotation = {'total': 12, 'passed': 12};
+      const stats3Annotation = {'total': 159, 'passed': 157};
       const stats3 = [
-        { result: 'Passed', count: 12, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 157, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 2, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
      
@@ -434,12 +1905,12 @@
                   <td>Toggle skipped tests</td>
                 </tr>
                 <tr>
-                  <td>L</td>
-                  <td>Toggle theme (light/dark)</td>
-                </tr>
-                <tr>
                   <td>esc</td>
                   <td>Reset all filters</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>Toggle theme (light/dark)</td>
                 </tr>
                 <tr>
                   <td>f</td>

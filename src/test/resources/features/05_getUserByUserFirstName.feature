@@ -1,7 +1,8 @@
 #Author: Mathumathi
 
- Feature: Get User By UserFirstName API
+Feature: Get User By UserFirstName API
 
+@sanity
 Scenario: Check if Admin is able to GET user by valid USER FirstName
     Given Admin set the GET request by user firstName
     When Admin sends the GET HTTP request by User FirstName

@@ -1,8 +1,8 @@
 #Author: Mathumathi
 
- Feature: Update User API
+Feature: Update User API
 
-
+@sanity
 Scenario: Check if Admin is able to update a user with all valid credentials
     Given Admin set the PUT request with the valid request body and valid Endpoint
     When Admin sends HTTPS Request with request Body
