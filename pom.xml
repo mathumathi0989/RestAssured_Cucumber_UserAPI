@@ -164,7 +164,13 @@
 </dependency>
 
 
-
+   <!-- Surefire Plugin (For Running Tests via Maven) -->
+ <!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-testng -->
+<dependency>
+    <groupId>org.apache.maven.surefire</groupId>
+    <artifactId>surefire-testng</artifactId>
+    <version>3.5.2</version>
+</dependency>
 
     
     
@@ -173,6 +179,16 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M7</version>
+            <configuration>
+                <includes>
+                    <include>**/testRunnerTest.java</include>
+                </includes>
+            </configuration>
+        </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
