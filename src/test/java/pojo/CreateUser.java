@@ -8,6 +8,7 @@ public class CreateUser {
 	private UserAddress userAddress;
 
 	// Getters and Setters
+	
 	public String getUser_first_name() {
 		return user_first_name;
 	}
@@ -49,6 +50,7 @@ public class CreateUser {
 	}
 
 	// Inner POJO class for UserAddress
+	
 	public static class UserAddress {
 		private String plotNumber;
 		private String street;
@@ -57,6 +59,7 @@ public class CreateUser {
 		private String zipCode;
 
 		// Getters and Setters
+		
 		public String getPlotNumber() {
 			return plotNumber;
 		}

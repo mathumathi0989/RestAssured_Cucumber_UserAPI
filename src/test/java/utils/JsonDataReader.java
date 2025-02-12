@@ -15,6 +15,7 @@ public class JsonDataReader {
 	public static Map<String, Object> getScenarioData(String scenarioName) {
 		try {
 			ObjectMapper objectMapper = new ObjectMapper();
+
 			// Read the root as an array
 			JsonNode rootNode = objectMapper.readTree(new File(JSON_PATH));
 

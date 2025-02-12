@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="53" passed="50" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-11T21:50:00 EST" name="Default suite" finished-at="2025-02-11T21:50:16 EST" duration-ms="16555">
+  <suite started-at="2025-02-12T10:25:50 EST" name="Default suite" finished-at="2025-02-12T10:26:07 EST" duration-ms="16527">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-11T21:50:00 EST" name="Default test" finished-at="2025-02-11T21:50:16 EST" duration-ms="16555">
+    <test started-at="2025-02-12T10:25:50 EST" name="Default test" finished-at="2025-02-12T10:26:07 EST" duration-ms="16527">
       <class name="runner.testRunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:00 EST" name="setUpClass" finished-at="2025-02-11T21:50:00 EST" duration-ms="366" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:50 EST" name="setUpClass" finished-at="2025-02-12T10:25:51 EST" duration-ms="356" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2898cd46]]>
+                <![CDATA[org.testng.TestRunner@69780093]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:00 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:04 EST" duration-ms="4228" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:51 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:55 EST" duration-ms="3890" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:04 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:05 EST" duration-ms="211" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:55 EST" duration-ms="376" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:05 EST" duration-ms="310" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:55 EST" duration-ms="373" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:05 EST" duration-ms="105" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:55 EST" duration-ms="172" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:05 EST" duration-ms="192" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:56 EST" duration-ms="198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:06 EST" duration-ms="502" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:56 EST" duration-ms="332" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:06 EST" duration-ms="214" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:56 EST" duration-ms="340" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -132,28 +132,16 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[1 expectation failed.
-Expected status code <201> but was <500>.
-]]>
+              <![CDATA[The following asserts failed:
+Status Code Validation Failed! expected [201] but found [500]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <201> but was <500>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
-at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at utils.apiHelper.validateStatusCode(apiHelper.java:222)
-at stepDefinitions.createUserStepDefinition.admin_receives_status_for_create_user_mandatory(createUserStepDefinition.java:55)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Status Code Validation Failed! expected [201] but found [500]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at utils.apiHelper.validateStatusCode(apiHelper.java:263)
+at stepDefinitions.createUserStepDefinition.admin_receives_status_for_create_user_mandatory(createUserStepDefinition.java:53)
 at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:14)
 ]]>
             </full-stacktrace>
@@ -161,7 +149,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:06 EST" duration-ms="202" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:57 EST" duration-ms="224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,7 +165,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:06 EST" duration-ms="216" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:57 EST" duration-ms="222" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -193,7 +181,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:07 EST" duration-ms="200" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:57 EST" duration-ms="256" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -209,7 +197,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:07 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:07 EST" duration-ms="364" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:57 EST" duration-ms="321" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -225,7 +213,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:07 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:07 EST" duration-ms="223" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:58 EST" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -241,7 +229,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:07 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:07 EST" duration-ms="105" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:58 EST" duration-ms="101" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -257,7 +245,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:07 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:07 EST" duration-ms="103" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:58 EST" duration-ms="102" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -273,7 +261,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:07 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:08 EST" duration-ms="209" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:58 EST" duration-ms="197" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -286,10 +274,26 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Status Code Validation Failed! expected [400] but found [409]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Status Code Validation Failed! expected [400] but found [409]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at utils.apiHelper.validateStatusCode(apiHelper.java:263)
+at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:273)
+at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:54)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:08 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:08 EST" duration-ms="297" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:58 EST" duration-ms="280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -305,7 +309,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:08 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:08 EST" duration-ms="209" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:58 EST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -321,7 +325,7 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:08 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:08 EST" duration-ms="205" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:59 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:59 EST" duration-ms="207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -334,36 +338,10 @@ at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///U
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <400> but was <409>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <409>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
-at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at utils.apiHelper.validateStatusCode(apiHelper.java:222)
-at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:269)
-at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:69)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:08 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:09 EST" duration-ms="209" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:59 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:59 EST" duration-ms="212" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -379,7 +357,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:09 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:09 EST" duration-ms="198" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:59 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:59 EST" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -395,7 +373,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:09 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:09 EST" duration-ms="217" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:59 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:25:59 EST" duration-ms="207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -411,7 +389,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:09 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:09 EST" duration-ms="216" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:25:59 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:00 EST" duration-ms="214" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -427,7 +405,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:09 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:09 EST" duration-ms="198" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:00 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:00 EST" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -443,7 +421,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:09 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:10 EST" duration-ms="284" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:00 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:00 EST" duration-ms="206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -459,7 +437,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:10 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:10 EST" duration-ms="297" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:00 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:00 EST" duration-ms="282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -475,7 +453,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:10 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:10 EST" duration-ms="209" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:00 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:00 EST" duration-ms="211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -491,7 +469,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:10 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:10 EST" duration-ms="196" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:00 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:01 EST" duration-ms="210" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -507,7 +485,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:10 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:11 EST" duration-ms="220" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:01 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:01 EST" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -523,7 +501,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:11 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:11 EST" duration-ms="289" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:01 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:01 EST" duration-ms="221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -539,7 +517,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:11 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:11 EST" duration-ms="289" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:01 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:01 EST" duration-ms="287" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -555,7 +533,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:11 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:11 EST" duration-ms="209" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:01 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:02 EST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -571,7 +549,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:11 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:12 EST" duration-ms="233" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:02 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:02 EST" duration-ms="215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -587,7 +565,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:12 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:12 EST" duration-ms="284" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:02 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:02 EST" duration-ms="207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -603,7 +581,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:12 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:12 EST" duration-ms="225" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:02 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:03 EST" duration-ms="513" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -618,26 +596,16 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[1 expectation failed.
-Expected status code <400> but was <201>.
-]]>
+              <![CDATA[The following asserts failed:
+Status Code Validation Failed! expected [400] but found [201]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <201>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
-at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at utils.apiHelper.validateStatusCode(apiHelper.java:222)
-at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:269)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Status Code Validation Failed! expected [400] but found [201]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at utils.apiHelper.validateStatusCode(apiHelper.java:263)
+at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:273)
 at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:149)
 ]]>
             </full-stacktrace>
@@ -645,7 +613,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:12 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:12 EST" duration-ms="203" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:03 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:03 EST" duration-ms="191" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -661,7 +629,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:12 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:13 EST" duration-ms="191" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:03 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:03 EST" duration-ms="198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -677,7 +645,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:13 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:13 EST" duration-ms="196" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:03 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:03 EST" duration-ms="194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -693,7 +661,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:13 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:13 EST" duration-ms="217" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:03 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:03 EST" duration-ms="307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -709,7 +677,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:13 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:13 EST" duration-ms="106" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:03 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:04 EST" duration-ms="124" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -725,7 +693,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:13 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:13 EST" duration-ms="361" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:04 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:04 EST" duration-ms="392" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -741,7 +709,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:13 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:14 EST" duration-ms="215" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:04 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:04 EST" duration-ms="202" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -757,7 +725,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:14 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:14 EST" duration-ms="338" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:04 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:04 EST" duration-ms="205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -773,7 +741,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:14 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:14 EST" duration-ms="214" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:04 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:05 EST" duration-ms="223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -789,7 +757,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:14 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:14 EST" duration-ms="203" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:05 EST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -805,7 +773,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:14 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:15 EST" duration-ms="206" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:05 EST" duration-ms="208" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -821,7 +789,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:15 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:15 EST" duration-ms="303" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:05 EST" duration-ms="243" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -837,7 +805,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:15 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:15 EST" duration-ms="95" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:05 EST" duration-ms="135" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -853,7 +821,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:15 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:15 EST" duration-ms="204" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:05 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:06 EST" duration-ms="223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -869,7 +837,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:15 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:15 EST" duration-ms="217" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:06 EST" duration-ms="230" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -885,7 +853,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:15 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:16 EST" duration-ms="221" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:06 EST" duration-ms="205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -901,7 +869,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:16 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:16 EST" duration-ms="289" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:06 EST" duration-ms="305" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -917,7 +885,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:16 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:16 EST" duration-ms="206" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:07 EST" duration-ms="213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -933,7 +901,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:16 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-11T21:50:16 EST" duration-ms="101" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:07 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-12T10:26:07 EST" duration-ms="113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -949,7 +917,7 @@ at ✽.Admin receives "400" "Bad Request" Status with error message(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-11T21:50:16 EST" name="tearDownClass" finished-at="2025-02-11T21:50:16 EST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testRunnerTest@7502291e]" started-at="2025-02-12T10:26:07 EST" name="tearDownClass" finished-at="2025-02-12T10:26:07 EST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

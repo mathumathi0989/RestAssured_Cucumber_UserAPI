@@ -21,9 +21,6 @@ public class createUserStepDefinition {
 	private RequestSpecification request;
 	private Response response;
 	private Map<String, Object> testData;
-	private String userContactNumber;
-	private String userEmail;
-	private String userId_1;
 
 	apiHelper common = new apiHelper();
 
@@ -35,10 +32,11 @@ public class createUserStepDefinition {
 	@When("Admin sends HTTPS Request and request Body with endpoint")
 	public Response admin_sends_https_request_and_request_body_with_endpoint() {
 		response = common.createRequestBody("valid create user", "valid");
+
 		// Store the User ID and User First Name in TestData
 		TestDataStore.setUserId(response.jsonPath().getString("user_id"));
 		System.out.println("Stored User ID in TestDataStore: " + TestDataStore.getUserId());
-return response;
+		return response;
 	}
 
 	@Then("Admin receives {string} {string} Status for create user")
@@ -61,16 +59,19 @@ return response;
 		RandomGenerator generator = new RandomGenerator();
 		String randomContactNumber = generator.generateRandomContactNumber();
 		String randomEmail = generator.generateRandomEmail();
+
 		// Replace placeholders in test data
 		String userContactNumber = testData.get("user_contact_number").toString().replace("{{randomContactNumber}}",
 				randomContactNumber);
 		String userEmail = testData.get("user_email_id").toString().replace("{{randomEmail}}", randomEmail);
+
 		// Prepare request body with POJO class and set values from JSON data
 		CreateUser createUser = new CreateUser();
 		createUser.setUser_first_name(testData.get("user_first_name").toString());
 		createUser.setUser_last_name(testData.get("user_last_name").toString());
 		createUser.setUser_contact_number(userContactNumber);
 		createUser.setUser_email_id(userEmail);
+
 		// Convert the POJO to JSON string using ObjectMapper
 		try {
 			ObjectMapper objectMapper = new ObjectMapper();
@@ -78,10 +79,13 @@ return response;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 		// Set the request body for POST request
-		request.body(createUser).log().all();
+		request.body(createUser);
+
 		// Log the request body before sending the request
-		System.out.println("Request Body: " + createUser.toString());
+		// System.out.println("Request Body: " + createUser.toString());
+
 		// Get the endpoint from test data and send the POST request
 		String endpoint = testData.get("endpoint").toString();
 		response = request.when().post(endpoint);
@@ -99,7 +103,7 @@ return response;
 		common.setResponse(response);
 		common.validateStatusCode(statusCode, false);
 	}
-	
+
 	@Then("Admin receives {string} {string} Status")
 	public void admin_receives_status(String statusCode, String statusText) {
 		common.setResponse(response);
@@ -150,7 +154,7 @@ return response;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		request.body(createUser).log().all();
+		request.body(createUser);
 		String endpoint = testData.get("endpoint").toString();
 		response = request.when().get(endpoint);
 		return response;
@@ -180,7 +184,7 @@ return response;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		request.body(createUser).log().all();
+		request.body(createUser);
 		String endpoint = testData.get("endpoint").toString();
 		response = request.when().post(endpoint);
 		return response;
@@ -220,7 +224,7 @@ return response;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		request.body(createUser).log().all();
+		request.body(createUser);
 		String endpoint = testData.get("endpoint").toString();
 		response = request.when().post(endpoint);
 		return response;
@@ -272,7 +276,7 @@ return response;
 	@When("Admin sends HTTPS Request and request Body with first name as empty")
 	public void admin_sends_https_request_and_request_body_with_first_name_as_empty() {
 		common.createRequestBody("invalid firstName as empty", "valid");
-		
+
 	}
 
 	@When("Admin sends HTTPS Request and request Body with State as numeric")
@@ -289,7 +293,7 @@ return response;
 
 	@When("Admin sends HTTPS Request and request Body with zipcode as empty")
 	public Response admin_sends_https_request_and_request_body_with_zipcode_as_empty() {
-		response = response = common.createRequestBody("invalid zipcode as empty", "valid");
+		response = common.createRequestBody("invalid zipcode as empty", "valid");
 		return response;
 	}
 

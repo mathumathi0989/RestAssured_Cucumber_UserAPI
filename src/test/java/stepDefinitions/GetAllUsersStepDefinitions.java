@@ -28,7 +28,6 @@ public class GetAllUsersStepDefinitions {
 		String endpoint = testData.get("endpoint").toString();
 		response = request.when().get(endpoint);
 		return response;
-
 	}
 
 	@Then("Admin receives {string} {string} Status Code")

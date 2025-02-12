@@ -31,7 +31,7 @@
                   <tr>
                     <td>
                       <span class="bg-failed" style="margin-right:10px;padding:0px 5px;">FAILED</span>
-                      <span style="">Feb 11, 2025, 9:50:00 PM &middot; 16s</span>
+                      <span style="">Feb 12, 2025, 10:25:50 AM &middot; 16s</span>
                     </td>
                   </tr>
                 </table>
@@ -124,7 +124,7 @@
                       <p class="text-failed" style="font-size:14px;font-weight:500;margin:0;margin-bottom:5px;">
                         Feature: Create User API
                       <p style="font-size:12px;margin:0;">
-                        <span>Feb 11, 2025, 9:50:16 PM / 12ms</span>
+                        <span>Feb 12, 2025, 10:26:07 AM / 13ms</span>
                       </p>
                     </td>
                   </tr>
@@ -182,23 +182,12 @@
                     <td width="650px" class="bg-failed" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Then Admin receives "201" "Created" Status for create user mandatory
-<pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code <201> but was <500>.
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-	at utils.apiHelper.validateStatusCode(apiHelper.java:222)
-	at stepDefinitions.createUserStepDefinition.admin_receives_status_for_create_user_mandatory(createUserStepDefinition.java:55)
+<pre>java.lang.AssertionError: The following asserts failed:
+	Status Code Validation Failed! expected [201] but found [500]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at utils.apiHelper.validateStatusCode(apiHelper.java:263)
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_for_create_user_mandatory(createUserStepDefinition.java:53)
 	at ✽.Admin receives "201" "Created" Status for create user mandatory(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:14)
 </pre>
                       </p>
@@ -409,7 +398,7 @@ Expected status code <201> but was <500>.
                   </tr>
                   <tr><td style="height:10px"></td></tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 10px;">
+                    <td width="650px" class="bg-failed" style="padding:7px 10px;">
                       <p style="font-size:13px;margin:0;">
                         Scenario: Check if Admin is able to create a user with first name as numeric
                       </p>
@@ -430,9 +419,17 @@ Expected status code <201> but was <500>.
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Then Admin receives "400" "Bad Request" Status with error message
+<pre>java.lang.AssertionError: The following asserts failed:
+	Status Code Validation Failed! expected [400] but found [409]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at utils.apiHelper.validateStatusCode(apiHelper.java:263)
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:273)
+	at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:54)
+</pre>
                       </p>
                     </td>
                   </tr>
@@ -496,7 +493,7 @@ Expected status code <201> but was <500>.
                   </tr>
                   <tr><td style="height:10px"></td></tr>
                   <tr>
-                    <td width="650px" class="bg-failed" style="padding:7px 10px;">
+                    <td width="650px" class="bg-passed" style="padding:7px 10px;">
                       <p style="font-size:13px;margin:0;">
                         Scenario: Check if Admin is able to create a user with Empty last name
                       </p>
@@ -517,26 +514,9 @@ Expected status code <201> but was <500>.
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Then Admin receives "400" "Bad Request" Status with error message
-<pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <409>.
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-	at utils.apiHelper.validateStatusCode(apiHelper.java:222)
-	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:269)
-	at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:69)
-</pre>
                       </p>
                     </td>
                   </tr>
@@ -1001,21 +981,12 @@ Expected status code <400> but was <409>.
                     <td width="650px" class="bg-failed" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Then Admin receives "400" "Bad Request" Status with error message
-<pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <201>.
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-	at utils.apiHelper.validateStatusCode(apiHelper.java:222)
-	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:269)
+<pre>java.lang.AssertionError: The following asserts failed:
+	Status Code Validation Failed! expected [400] but found [201]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at utils.apiHelper.validateStatusCode(apiHelper.java:263)
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:273)
 	at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:149)
 </pre>
                       </p>

@@ -21,17 +21,11 @@ public class updateUserStepDefinition {
 	public Response admin_sends_https_request_with_request_body() {
 		response = common.updateRequestBody("valid update user", "valid");
 
-	    // Log the full response body for debugging
-	    System.out.println("Update User Response Body: " + response.getBody().asPrettyString());
-
-	    // Extract the first name from response and store it
-	    String userFirstName = response.jsonPath().getString("user_first_name");
-	    System.out.println("Extracted User First Name: " + userFirstName);
-
-	 // Store in TestDataStore
-	    TestDataStore.setUserFirstName(userFirstName);
+		// Extract the first name from response and store it in TestDataStore
+		String userFirstName = response.jsonPath().getString("user_first_name");
+		TestDataStore.setUserFirstName(userFirstName);
 		System.out.println("Stored User First Name: " + TestDataStore.getUserFirstName());
-		
+
 		return response;
 	}
 
