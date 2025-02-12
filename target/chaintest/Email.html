@@ -31,7 +31,7 @@
                   <tr>
                     <td>
                       <span class="bg-failed" style="margin-right:10px;padding:0px 5px;">FAILED</span>
-                      <span style="">Feb 12, 2025, 10:25:50 AM &middot; 16s</span>
+                      <span style="">Feb 12, 2025, 12:25:12 PM &middot; 31s</span>
                     </td>
                   </tr>
                 </table>
@@ -124,7 +124,7 @@
                       <p class="text-failed" style="font-size:14px;font-weight:500;margin:0;margin-bottom:5px;">
                         Feature: Create User API
                       <p style="font-size:12px;margin:0;">
-                        <span>Feb 12, 2025, 10:26:07 AM / 13ms</span>
+                        <span>Feb 12, 2025, 12:25:44 PM / 16ms</span>
                       </p>
                     </td>
                   </tr>
@@ -282,7 +282,7 @@
                   </tr>
                   <tr><td style="height:10px"></td></tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 10px;">
+                    <td width="650px" class="bg-failed" style="padding:7px 10px;">
                       <p style="font-size:13px;margin:0;">
                         Scenario: Check if Admin is able to create a user with same contact number
                       </p>
@@ -303,9 +303,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Then Admin receives "409" "Conflict" Status with contact message
+<pre>java.lang.AssertionError: expected [User already exist with same contact number] but found [User already exist with same email id]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_contact_message(createUserStepDefinition.java:199)
+	at ✽.Admin receives "409" "Conflict" Status with contact message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:34)
+</pre>
                       </p>
                     </td>
                   </tr>
@@ -398,7 +408,7 @@
                   </tr>
                   <tr><td style="height:10px"></td></tr>
                   <tr>
-                    <td width="650px" class="bg-failed" style="padding:7px 10px;">
+                    <td width="650px" class="bg-passed" style="padding:7px 10px;">
                       <p style="font-size:13px;margin:0;">
                         Scenario: Check if Admin is able to create a user with first name as numeric
                       </p>
@@ -419,17 +429,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Then Admin receives "400" "Bad Request" Status with error message
-<pre>java.lang.AssertionError: The following asserts failed:
-	Status Code Validation Failed! expected [400] but found [409]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at utils.apiHelper.validateStatusCode(apiHelper.java:263)
-	at stepDefinitions.createUserStepDefinition.admin_receives_status_with_error_message(createUserStepDefinition.java:273)
-	at ✽.Admin receives "400" "Bad Request" Status with error message(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/2025_Team04_RestAssured_BDD/src/test/resources/features/02_createUser.feature:54)
-</pre>
                       </p>
                     </td>
                   </tr>
