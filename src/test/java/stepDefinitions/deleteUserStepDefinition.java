@@ -37,7 +37,7 @@ public class deleteUserStepDefinition {
 	@Then("Admin receives the {string} {string} Status code with message")
 	public void admin_receives_the_status_code_with_message(String statusCode, String statusText) {
 		common.setResponse(response);
-		common.statusCodeValidation(statusCode);
+		common.validateStatusCode(statusCode, true);
 		String actualMessage = response.jsonPath().getString("message");
 		String expectedMessage = "User is deleted successfully";
 		Assert.assertEquals(actualMessage, expectedMessage);
@@ -46,7 +46,7 @@ public class deleteUserStepDefinition {
 	@Then("Admin receives the {string} {string} Status")
 	public void admin_receives_the_status(String statusCode, String statusText) {
 		common.setResponse(response);
-		common.statusCodeValidation(statusCode);
+		common.validateStatusCode(statusCode, true);
 	}
 
 	@When("Admin sends DELETE HTTPS Request with already deleted userID")

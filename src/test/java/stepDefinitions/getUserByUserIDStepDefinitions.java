@@ -36,7 +36,7 @@ public class getUserByUserIDStepDefinitions {
 	@Then("Admin receives the {string} {string} Status code with valid user details")
 	public void admin_receives_the_status_code_with_valid_user_details(String statusCode, String statusText) {
 		common.setResponse(response);
-		common.statusCodeValidation(statusCode);
+		common.validateStatusCode(statusCode, true);
 	}
 
 	@When("Admin sends HTTPS Request with invalid userID")

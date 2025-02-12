@@ -34,7 +34,7 @@ public class GetAllUsersStepDefinitions {
 	@Then("Admin receives {string} {string} Status Code")
 	public void admin_receives_status_code(String statusCode, String statusText) {
 		common.setResponse(response);
-		common.statusCodeValidation(statusCode);
+		common.validateStatusCode(statusCode, false);
 	}
 
 	@When("Admin sends HTTPS Request without endpoint")

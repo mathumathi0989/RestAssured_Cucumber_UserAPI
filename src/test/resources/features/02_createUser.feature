@@ -6,7 +6,7 @@
 Scenario: Check if Admin is able to create a user with all valid credentials
     Given Admin set the POST request with the valid request body
     When Admin sends HTTPS Request and request Body with endpoint
-    Then Admin receives "201" "Created" Status
+    Then Admin receives "201" "Created" Status for create
 
 Scenario: Check if Admin is able to create a user with only mandatory fields
 		Given Admin set the POST request with the valid request body

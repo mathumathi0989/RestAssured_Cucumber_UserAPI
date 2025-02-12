@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testRunner.testRunner">
+      <class name="runner.testRunnerTest">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="17 33 6"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="33 6"/>
         </methods>
-      </class> <!-- testRunner.testRunner -->
+      </class> <!-- runner.testRunnerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

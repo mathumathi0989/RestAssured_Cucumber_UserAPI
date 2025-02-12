@@ -36,7 +36,7 @@ public class getUserByFirstNameStepDefinition {
 	@Then("Admin receives the {string} {string} Status code for UserFirstName")
 	public void admin_receives_the_status_code_for_user_first_name(String statusCode, String statusText) {
 		common.setResponse(response);
-		common.statusCodeValidation(statusCode);
+		common.validateStatusCode(statusCode, true);
 	}
 
 	@When("Admin sends HTTPS Request with invalid userfirstName")
